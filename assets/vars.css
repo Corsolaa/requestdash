@@ -1,0 +1,31 @@
+:root {
+    --max-width: 1400px;
+    --content-padding: 20px;
+}
+
+:root {
+    --white: #fbffff;
+    --blue: #0e6ab3;
+    --light-blue: #ebf4fb;
+
+    --orange: #c5852b;
+    --light-orange: #f9f2e8;
+
+    --green: #10a54b;
+    --light-green: #e6f6ec;
+
+    --red: #a51e22;
+    --light-red: #f4e8e8;
+
+    --black: #171717;
+    --gray: #212121;
+    --light-gray: #303030;
+}
+
+.blue-font {
+    color: var(--blue) !important;
+}
+
+.gray-font {
+    color: var(--gray) !important;
+}

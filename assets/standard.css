@@ -1,0 +1,108 @@
+/* Removes all the stupid things from browser and makes sure everything fits well. */
+*,  *::before, *::after  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    background: var(--black);
+}
+
+/* Makes sure that images always fit and are visible. */
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Makes sure that all clickable have a pointer cursor. */
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+.hide_mobile {
+    display: none;
+}
+
+button {
+    display: inline-block;
+
+    border: 2px solid var(--white);
+    border-radius: 15px;
+    padding: 15px 25px;
+
+    font-style: italic;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--light-gray);
+}
+
+.koekoek_logo {
+    display: flex;
+    font-size: 40px;
+    gap: 3px;
+
+    span {
+        color: var(--white);
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: var(--gray);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.lock_scroll {
+    overflow: hidden;
+}
+
+.hide_scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.hide_scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+/* after tablet width */
+@media (min-width: 768px) {
+    .hide_mobile {
+        display: block;
+    }
+
+    .only_show_mobile {
+        display: none;
+    }
+}
