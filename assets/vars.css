@@ -29,3 +29,27 @@
 .gray-font {
     color: var(--gray) !important;
 }
+
+.get {
+    color: var(--blue);
+    background: var(--light-blue);
+    border-color: var(--blue);
+}
+
+.post {
+    color: var(--green);
+    background: var(--light-green);
+    border-color: var(--green);
+}
+
+.put {
+    color: var(--orange);
+    background: var(--light-orange);
+    border-color: var(--orange);
+}
+
+.delete {
+    color: var(--red);
+    background: var(--light-red);
+    border-color: var(--red);
+}

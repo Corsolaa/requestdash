@@ -1,5 +1,5 @@
 /* Removes all the stupid things from browser and makes sure everything fits well. */
-*,  *::before, *::after  {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -41,6 +41,10 @@ summary,
     justify-content: center;
 }
 
+.flex_0 {
+    flex: 0 !important;
+}
+
 .hide_mobile {
     display: none;
 }
@@ -58,16 +62,6 @@ button {
     background: var(--light-gray);
 }
 
-.koekoek_logo {
-    display: flex;
-    font-size: 40px;
-    gap: 3px;
-
-    span {
-        color: var(--white);
-    }
-}
-
 .divider {
     width: 100%;
     height: 1px;
@@ -82,8 +76,9 @@ button {
 
 .hide_scrollbar {
     scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
+
 .hide_scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
 }

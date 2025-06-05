@@ -1,0 +1,91 @@
+.new_request {
+    fieldset {
+        border: none;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    .information {
+        display: flex;
+
+        .url {
+            display: flex;
+            height: 100%;
+
+            select:focus-visible {
+                outline: none;
+                box-shadow: none;
+                border-color: #ccc;
+            }
+
+            select#http_method {
+                height: 100%;
+                width: 75px;
+
+                text-align: center;
+
+                border-radius: 8px 0 0 8px;
+                border: 2px solid var(--blue);
+                background: var(--light-blue);
+                color: var(--blue);
+            }
+
+            input#request_url {
+                flex: 1;
+
+                border-radius: 0 8px 8px 0;
+            }
+        }
+    }
+
+    .request_box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            padding: 8px;
+            border-radius: 8px;
+            background: var(--light-gray);
+        }
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: border-color 0.2s, box-shadow 0.2s;
+        box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border-color: var(--orange);
+        box-shadow: 0 0 0 2px rgb(249, 242, 232, 0.2);
+    }
+
+    button.submit {
+        border-color: var(--green);
+        background: var(--light-green);
+
+        color: var(--green);
+        font-style: normal;
+        font-size: 1.2rem;
+    }
+}
